@@ -17,7 +17,7 @@
 
 
 
-    <main class="container">
+    <div class="container">
         
         <nav class="nav-user row justify-content-end"> <!-- User -->
             <ul class="nav">
@@ -75,25 +75,45 @@
         </header> <!-- /Title -->
         
         
-        <nav class="nav-categories row justify-content-center"> <!-- Categories -->
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">HOME</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">PAYMENT & ACCOUNTING</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">LOGISTICS</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">CUSTOMER SERVICES</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">REPORTS</a>
-                </li>
-            </ul>
-        </nav> <!-- /Categories -->
+        <nav class="nav-categories row justify-content-center">
+          <!-- Categories -->
+          <ul class="nav">
+              <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="toHome()">HOME</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="toPaymentAndAccounting()">PAYMENT & ACCOUNTING</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="toLogistics()">LOGISTICS</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="toCustomerServices()">CUSTOMER SERVICES</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="#" onclick="toReports()">REPORTS</a>
+              </li>
+          </ul>
+        </nav>
+      
+        <script>
+            function toHome() {
+              window.location.href = 'index.html';
+            }
+            function toPaymentAndAccounting() {
+                window.location.href = 'payment_and_accounting.html';
+            }
+            function toLogistics() {
+              window.location.href = 'logistics.html';
+            }
+            function toCustomerServices() {
+              window.location.href = 'customer_services.html';
+            }
+            function toReports() {
+                window.location.href = 'reports.html';
+            }
+        </script>
+        <!-- /Categories -->
         
         <section class="banner row"> <!-- Banner -->
             <div class="col-sm-12">
